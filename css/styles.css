@@ -595,6 +595,67 @@ footer {
   margin-bottom: 20px;
 }
 
+.container-subscribe {
+  margin-left: 93px;
+  width: 570px;
+}
+
+.container-subscribe .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.container-subscribe form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-subscribe input {
+  padding: 15px 16px;
+  width: 358px;
+  background-color: #2196f300;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-button {
+  width: 200px;
+  height: 50px;
+  padding: 10px 0;
+  background-color: #2196f3;
+  border-radius: 4px;
+  border-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.container-subscribe .send {
+  fill: #ffffff;
+  margin-left: 10px;
+}
+
 .footer .social-link {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -638,7 +699,7 @@ footer {
   border-radius: 4px;
   margin: auto;
   cursor: initial;
-  padding: 8px;
+  padding: 40px;
   position: relative;
 }
 
@@ -655,4 +716,130 @@ footer {
   top: 8px;
   right: 8px;
   cursor: pointer;
+}
+
+.order-form .order-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-form-head {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-container label {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.input-container input {
+  cursor: pointer;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding: 11px 12px 11px 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border-color: #2196f3;
+}
+
+.input-container textarea {
+  cursor: pointer;
+  resize: none;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container textarea:focus {
+  border-color: #2196f3;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus ~ .input-icon {
+  fill: #2196f3;
+}
+
+.checkbox-container {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.checkbox-container > label {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.checkbox-container .aggrement-condition {
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+.checkbox-container input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.checkbox-container .checkmark-box {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox-container .checkmark-check {
+  visibility: hidden;
+  position: absolute;
+}
+
+.checkbox-container input:checked ~ .checkmark-box {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.checkbox-container input:checked ~ .checkmark-check {
+  visibility: visible;
 }
